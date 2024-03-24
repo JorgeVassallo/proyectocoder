@@ -8,3 +8,4 @@
   5. En el video se explica el funcionamiento de la pagina
 
 Integrantes: Jorge Vassallo
+Aclaraciones: Mantuve el nombre como "preentrega3" aun siendo el proyecto final ya que al cambiarle el nombre me dejaba de andar todo el codigo.
