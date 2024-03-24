@@ -1,0 +1,31 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+Buscar sucursales
+{% endblock %}
+
+{% block parrafo %}
+
+<form action="", method="GET">
+
+    <p>
+
+        <input type="text", name="direccion">
+
+        <input type="submit", value="Buscar">
+    
+    </p>
+
+
+</form>
+
+
+<p>{{mensaje}}</p>
+
+{% for sucursal in resultado %}
+
+    <p>{{sucursal}}</p>
+
+{% endfor %}
+
+{% endblock %}

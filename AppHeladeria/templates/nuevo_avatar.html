@@ -1,0 +1,17 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+{{mensaje}}
+{% endblock %}
+
+{% block parrafo %}
+
+<form action="", method="POST", enctype="multipart/form-data"> {% csrf_token %}
+
+{{formu}}
+
+<button type="submit"> Crear Avatar </button>
+
+</form>
+
+{% endblock %}

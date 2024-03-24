@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+
+{% block titulo %}
+Vista de sucursales
+{% endblock %}
+
+{% block parrafo %}
+
+<ol>
+
+    {% for valor in total %}
+
+        <li>{{valor.direccion}}</li>
+        
+        {% if user.is_authenticated %}
+        <a href="{% url 'Actualizar_sucursales' valor.id %}">Actualizar Sucursal</a>
+        <a href="{% url 'Borrar_sucursal' valor.id %}">Borrar Sucursal</a>
+        {% endif %}
+    {% endfor %}
+
+</ol>
+
+<a class="btn btn-primary" href="{% url 'Crear_sucursal' %}">Nueva Sucursal</a>
+
+{% endblock %}
